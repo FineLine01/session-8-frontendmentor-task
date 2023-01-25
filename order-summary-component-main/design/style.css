@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
 * {
     margin: 0;
     padding: 0;
@@ -80,4 +82,145 @@ img {
     font-weight: 500;
 }
 
+.price-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 260px;
+    background-color: var(--smallcontainercolor);
+    border: 10px;
+    margin-top: 20px;
+}
+
+.plan {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-right: 45px;
+    margin-top: 5px; 
+}
+
+.price-section > img {
+    max-width: 100%;
+    max-height: 100%;
+    height: 35px;
+    width: 35px;
+    margin-left: 15px;
+    
+}
+
+.plan > h2 {
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.plan > p {
+    font-size: 12px;
+    opacity: 50%;
+    margin-top:  2px;
+    font-weight: 700;
+}
+
+.price-section > a {
+    font-size: 12px;
+    margin-right: 15px;
+}
+
+.button-payment {
+    height: 40px;
+    width: 260px;
+    border: none;
+    margin-top: 30px;
+    color: var(--white);
+    background-color: var(--Brightblue);
+    border-radius: 10px;
+    font-size: 0.8rem;
+    padding: 10px;
+    font-weight: 700;
+    box-shadow: 0em 1em 1em 0.25em var(--box-shadow);
+}
+
+.cancel-order {
+    text-decoration: none;
+    color: var(--Desaturatedblue);
+    font-size: small;
+    margin-top: 25px;
+    font-weight: 700;
+}
+
+a, .button-payment, .cancel-order {
+    cursor: pointer;
+}
+
+.attribution {
+    margin-top: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+    margin-left: 40px;
+}
+
+.attribution > a {
+    text-decoration: none;
+    color: var(--Brightblue);
+}
+
+.cancel-order:hover, #change {
+    color: var(--black);
+}
+
+.button-payment:hover {
+    background-color: var(--hover-Brightblue);
+}
+
+.price-section #change {
+    text-decoration: none;
+}
+
+@media (max-width: 450px) {
+    body {
+        background-image: url(/order-summary-component-main/images/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+    }
+
+    .button-payment {
+        font-size: 15px;
+        font-weight: 700;
+        height: 50px;
+    }
+
+    .description > p {
+        font-size: 16px;
+        line-height: 1.4rem;
+        text-align: center;
+        padding: 2px;
+        font-weight: 500;
+        padding-top: 0;
+    }
+
+    .container {
+        height: 550px;
+        padding: 0;
+    }
+
+    .description {
+        padding: 25px;
+    }
+
+    .cancel-order {
+        font-size: medium;
+    }
+
+    .attribution {
+        margin-top: 40px;
+        font-family: "Montserrat", sans-serif;
+        font-size: small;
+    }
+
+    .attribution > a {
+        text-decoration: none;
+        color: var(--Brightblue);
+    }
+}
 
