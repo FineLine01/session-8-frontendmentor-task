@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* List of colors and measurements */
+
+:root {
+    --redhatdisplay: 'Red Hat Display', sans-serif; 
+    --Paleblue: hsl(225, 100%, 94%);
+    --Brightblue: hsl(245, 75%, 52%);
+    --Verypaleblue: hsl(225, 100%, 98%);
+    --Desaturatedblue: hsl(224, 23%, 55%);
+    --Darkblue: hsl(223, 47%, 23%);
+    --smallcontainercolor: hsl(230, 75%, 98%);
+    --hover-Brightblue: hsl(245, 75%, 32%);
+    --box-shadow: hsla(227, 10%, 83%, 0.795);
+    --black: hsl(0, 100%, 0%);
+    --white: hsl(0, 100%, 100%);
+    --Mobile: 375px;
+    --Desktop: 1440px;
+}
+
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/order-summary-component-main/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    max-width: var(--Desktop);
+    background-color: var(--Paleblue);
+    font-family: var(--redhatdisplay);
+    max-width: var(--Desktop);
+}
+
+.container {
+    width: 320px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    border-radius: 15px;
+}
+
+#header-img 
+img {
+    max-width: 100%;
+    max-height: 165px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+}
+
+.description > h1 {
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.description > p, .description > h1 {
+    font-family: var(--redhatdisplay);
+}
+
+.description > p {
+    font-size: 14px;
+    line-height: 15.rem;
+    margin-top: 20px;
+    opacity: 50%;
+    font-weight: 500;
+}
+
+
